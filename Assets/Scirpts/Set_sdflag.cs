@@ -12,11 +12,11 @@ public class Set_sdflag : MonoBehaviour {
     {
         if (Static.Instance.GetValue("sdflag") == "0")
         {
-            all.text = "金额必须是1000的倍数 您当前的排单下限是1000元，上限是5000元 排单每1000元消耗1个排单币";
+            all.text = "金额必须是500的倍数 您当前的排单下限是500元，上限是5000元 排单每500元消耗1个排单币";
         }
         else
         {
-            all.text = "金额必须是1000的倍数 您当前的排单下限是" + Static.Instance.GetValue("sc_money")+ "，上限是20000元 排单每1000元消耗1个排单币";
+            all.text = "金额必须是500的倍数 您当前的排单下限是" + Static.Instance.GetValue("sc_money")+ "，上限是20000元 排单每1000元消耗1个排单币";
         }
     }
 }
